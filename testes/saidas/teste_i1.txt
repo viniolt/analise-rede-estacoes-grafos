@@ -1,0 +1,33 @@
+# Teste i1: Conexidade da rede de estações
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  j) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: 
+  Grafo lido: tipo 3 (grafo não orientado com peso nos vértices e arestas), n = 32, m = 84.
+
+  [... menu ...]
+  Opção: i
+
+  O grafo (não orientado) é CONEXO.
+  Componentes conexas: 1
+   C0 (32 vértices): Perus, Tremembe, Santana de Parnaiba, Santana/Tucuruvi, Pirituba, Freguesia do O, Sao Miguel Paulista, Itaim Paulista, Vila Maria/Guilherme, Penha, Lapa, Itaquera, Se - CGE, Mooca, Pinheiros, Vila Formosa, Butanta, Capela do Socorro, Vila Mariana, Ipiranga, Vila Prudente, Sao Mateus, Campo Limpo, Santo Amaro, Jabaquara, Maua, Cidade Ademar, Parelheiros/Rodoanel, M Boi Mirim, Riacho Grande, Parelheiros/Barragem, Marsilac
+  (Grafo reduzido só se aplica a grafos orientados.)
+
+  [... menu ...]
+  Opção: j
+
+  Aplicação encerrada.

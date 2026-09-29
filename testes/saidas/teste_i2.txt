@@ -1,0 +1,62 @@
+# Teste i2: Isolar Marsilac (remover suas 4 arestas) e verificar
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  j) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: 
+  Grafo lido: tipo 3 (grafo não orientado com peso nos vértices e arestas), n = 32, m = 84.
+
+  [... menu ...]
+  Opção: f
+
+  Vértice de origem: 27
+  Vértice de destino: 31
+  Aresta 27 - 31 removida. m = 83.
+
+  [... menu ...]
+  Opção: f
+
+  Vértice de origem: 28
+  Vértice de destino: 31
+  Aresta 28 - 31 removida. m = 82.
+
+  [... menu ...]
+  Opção: f
+
+  Vértice de origem: 29
+  Vértice de destino: 31
+  Aresta 29 - 31 removida. m = 81.
+
+  [... menu ...]
+  Opção: f
+
+  Vértice de origem: 30
+  Vértice de destino: 31
+  Aresta 30 - 31 removida. m = 80.
+
+  [... menu ...]
+  Opção: i
+
+  O grafo (não orientado) é DESCONEXO.
+  Componentes conexas: 2
+   C0 (31 vértices): Perus, Tremembe, Santana de Parnaiba, Santana/Tucuruvi, Pirituba, Freguesia do O, Sao Miguel Paulista, Itaim Paulista, Vila Maria/Guilherme, Penha, Lapa, Itaquera, Se - CGE, Mooca, Pinheiros, Vila Formosa, Butanta, Capela do Socorro, Vila Mariana, Ipiranga, Vila Prudente, Sao Mateus, Campo Limpo, Santo Amaro, Jabaquara, Maua, Cidade Ademar, Parelheiros/Rodoanel, M Boi Mirim, Riacho Grande, Parelheiros/Barragem
+   C1 (1 vértices): Marsilac
+  (Grafo reduzido só se aplica a grafos orientados.)
+
+  [... menu ...]
+  Opção: j
+
+  Aplicação encerrada.

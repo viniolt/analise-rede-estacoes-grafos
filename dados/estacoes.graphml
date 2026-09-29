@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
+  <key id="lat" for="node" attr.name="latitude" attr.type="double"/>
+  <key id="lon" for="node" attr.name="longitude" attr.type="double"/>
+  <key id="precip" for="node" attr.name="precip_mm" attr.type="double"/>
+  <key id="temp" for="node" attr.name="temp_media_c" attr.type="double"/>
+  <key id="umid" for="node" attr.name="umid_media_pct" attr.type="double"/>
+  <key id="weight" for="edge" attr.name="weight" attr.type="double"/>
+  <graph edgedefault="undirected">
+    <node id="0">
+      <data key="label">Perus</data>
+      <data key="lat">-23.409722</data>
+      <data key="lon">-46.742778</data>
+      <data key="precip">552.8</data>
+      <data key="temp">23.09</data>
+      <data key="umid">86.6</data>
+    </node>
+    <node id="1">
+      <data key="label">Tremembe</data>
+      <data key="lat">-23.412222</data>
+      <data key="lon">-46.587222</data>
+      <data key="precip">707.0</data>
+      <data key="temp">23.31</data>
+      <data key="umid">79.9</data>
+    </node>
+    <node id="2">
+      <data key="label">Santana de Parnaiba</data>
+      <data key="lat">-23.43641</data>
+      <data key="lon">-46.909258</data>
+      <data key="precip">734.8</data>
+      <data key="temp">22.81</data>
+      <data key="umid">83.6</data>
+    </node>
+    <node id="3">
+      <data key="label">Santana/Tucuruvi</data>
+      <data key="lat">-23.477222</data>
+      <data key="lon">-46.607222</data>
+      <data key="precip">645.4</data>
+      <data key="temp">23.12</data>
+      <data key="umid">78.5</data>
+    </node>
+    <node id="4">
+      <data key="label">Pirituba</data>
+      <data key="lat">-23.479444</data>
+      <data key="lon">-46.730556</data>
+      <data key="precip">545.0</data>
+      <data key="temp">23.27</data>
+      <data key="umid">80.9</data>
+    </node>
+    <node id="5">
+      <data key="label">Freguesia do O</data>
+      <data key="lat">-23.486944</data>
+      <data key="lon">-46.693889</data>
+      <data key="precip">624.2</data>
+      <data key="temp">23.11</data>
+      <data key="umid">81.1</data>
+    </node>
+    <node id="6">
+      <data key="label">Sao Miguel Paulista</data>
+      <data key="lat">-23.502778</data>
+      <data key="lon">-46.439167</data>
+      <data key="precip">788.8</data>
+      <data key="temp">23.57</data>
+      <data key="umid">81.5</data>
+    </node>
+    <node id="7">
+      <data key="label">Itaim Paulista</data>
+      <data key="lat">-23.503333</data>
+      <data key="lon">-46.386111</data>
+      <data key="precip">695.2</data>
+      <data key="temp">22.93</data>
+      <data key="umid">83.7</data>
+    </node>
+    <node id="8">
+      <data key="label">Vila Maria/Guilherme</data>
+      <data key="lat">-23.509167</data>
+      <data key="lon">-46.607222</data>
+      <data key="precip">946.0</data>
+      <data key="temp">23.01</data>
+      <data key="umid">83.3</data>
+    </node>
+    <node id="9">
+      <data key="label">Penha</data>
+      <data key="lat">-23.521111</data>
+      <data key="lon">-46.523333</data>
+      <data key="precip">780.2</data>
+      <data key="temp">22.93</data>
+      <data key="umid">82.1</data>
+    </node>
+    <node id="10">
+      <data key="label">Lapa</data>
+      <data key="lat">-23.524444</data>
+      <data key="lon">-46.705833</data>
+      <data key="precip">466.8</data>
+      <data key="temp">23.57</data>
+      <data key="umid">78.7</data>
+    </node>
+    <node id="11">
+      <data key="label">Itaquera</data>
+      <data key="lat">-23.535</data>
+      <data key="lon">-46.454444</data>
+      <data key="precip">597.6</data>
+      <data key="temp">22.43</data>
+      <data key="umid">80.9</data>
+    </node>
+    <node id="12">
+      <data key="label">Se - CGE</data>
+      <data key="lat">-23.546111</data>
+      <data key="lon">-46.631944</data>
+      <data key="precip">846.8</data>
+      <data key="temp">23.73</data>
+      <data key="umid">76.3</data>
+    </node>
+    <node id="13">
+      <data key="label">Mooca</data>
+      <data key="lat">-23.562778</data>
+      <data key="lon">-46.597778</data>
+      <data key="precip">584.4</data>
+      <data key="temp">23.62</data>
+      <data key="umid">80.1</data>
+    </node>
+    <node id="14">
+      <data key="label">Pinheiros</data>
+      <data key="lat">-23.565833</data>
+      <data key="lon">-46.689444</data>
+      <data key="precip">641.0</data>
+      <data key="temp">22.66</data>
+      <data key="umid">85.3</data>
+    </node>
+    <node id="15">
+      <data key="label">Vila Formosa</data>
+      <data key="lat">-23.568611</data>
+      <data key="lon">-46.546944</data>
+      <data key="precip">503.8</data>
+      <data key="temp">23.05</data>
+      <data key="umid">81.5</data>
+    </node>
+    <node id="16">
+      <data key="label">Butanta</data>
+      <data key="lat">-23.568889</data>
+      <data key="lon">-46.729167</data>
+      <data key="precip">545.6</data>
+      <data key="temp">23.33</data>
+      <data key="umid">79.6</data>
+    </node>
+    <node id="17">
+      <data key="label">Capela do Socorro</data>
+      <data key="lat">-23.587778</data>
+      <data key="lon">-46.716667</data>
+      <data key="precip">715.4</data>
+      <data key="temp">22.16</data>
+      <data key="umid">84.7</data>
+    </node>
+    <node id="18">
+      <data key="label">Vila Mariana</data>
+      <data key="lat">-23.588333</data>
+      <data key="lon">-46.634444</data>
+      <data key="precip">755.8</data>
+      <data key="temp">22.77</data>
+      <data key="umid">78.9</data>
+    </node>
+    <node id="19">
+      <data key="label">Ipiranga</data>
+      <data key="lat">-23.588889</data>
+      <data key="lon">-46.605278</data>
+      <data key="precip">772.2</data>
+      <data key="temp">22.86</data>
+      <data key="umid">89.1</data>
+    </node>
+    <node id="20">
+      <data key="label">Vila Prudente</data>
+      <data key="lat">-23.5925</data>
+      <data key="lon">-46.573889</data>
+      <data key="precip">451.2</data>
+      <data key="temp">22.89</data>
+      <data key="umid">93.5</data>
+    </node>
+    <node id="21">
+      <data key="label">Sao Mateus</data>
+      <data key="lat">-23.6</data>
+      <data key="lon">-46.480556</data>
+      <data key="precip">457.8</data>
+      <data key="temp">21.97</data>
+      <data key="umid">87.5</data>
+    </node>
+    <node id="22">
+      <data key="label">Campo Limpo</data>
+      <data key="lat">-23.632778</data>
+      <data key="lon">-46.766111</data>
+      <data key="precip">478.0</data>
+      <data key="temp">23.12</data>
+      <data key="umid">79.7</data>
+    </node>
+    <node id="23">
+      <data key="label">Santo Amaro</data>
+      <data key="lat">-23.6425</data>
+      <data key="lon">-46.699444</data>
+      <data key="precip">766.4</data>
+      <data key="temp">23.45</data>
+      <data key="umid">79.7</data>
+    </node>
+    <node id="24">
+      <data key="label">Jabaquara</data>
+      <data key="lat">-23.652222</data>
+      <data key="lon">-46.6475</data>
+      <data key="precip">790.0</data>
+      <data key="temp">22.77</data>
+      <data key="umid">90.7</data>
+    </node>
+    <node id="25">
+      <data key="label">Maua</data>
+      <data key="lat">-23.667778</data>
+      <data key="lon">-46.460833</data>
+      <data key="precip">747.0</data>
+      <data key="temp">21.91</data>
+      <data key="umid">85.3</data>
+    </node>
+    <node id="26">
+      <data key="label">Cidade Ademar</data>
+      <data key="lat">-23.675</data>
+      <data key="lon">-46.654722</data>
+      <data key="precip">642.4</data>
+      <data key="temp">22.46</data>
+      <data key="umid">85.9</data>
+    </node>
+    <node id="27">
+      <data key="label">Parelheiros/Rodoanel</data>
+      <data key="lat">-23.682778</data>
+      <data key="lon">-46.711389</data>
+      <data key="precip">591.6</data>
+      <data key="temp">21.09</data>
+      <data key="umid">92.5</data>
+    </node>
+    <node id="28">
+      <data key="label">M Boi Mirim</data>
+      <data key="lat">-23.688611</data>
+      <data key="lon">-46.770556</data>
+      <data key="precip">509.4</data>
+      <data key="temp">22.74</data>
+      <data key="umid">86.7</data>
+    </node>
+    <node id="29">
+      <data key="label">Riacho Grande</data>
+      <data key="lat">-23.778889</data>
+      <data key="lon">-46.528333</data>
+      <data key="precip">814.4</data>
+      <data key="temp">21.15</data>
+      <data key="umid">93.0</data>
+    </node>
+    <node id="30">
+      <data key="label">Parelheiros/Barragem</data>
+      <data key="lat">-23.825278</data>
+      <data key="lon">-46.705556</data>
+      <data key="precip">924.0</data>
+      <data key="temp">21.16</data>
+      <data key="umid">91.8</data>
+    </node>
+    <node id="31">
+      <data key="label">Marsilac</data>
+      <data key="lat">-23.936389</data>
+      <data key="lon">-46.708611</data>
+      <data key="precip">840.8</data>
+      <data key="temp">20.57</data>
+      <data key="umid">94.3</data>
+    </node>
+    <edge source="0" target="4"><data key="weight">7.85</data></edge>
+    <edge source="0" target="5"><data key="weight">9.93</data></edge>
+    <edge source="0" target="10"><data key="weight">13.3</data></edge>
+    <edge source="0" target="3"><data key="weight">15.73</data></edge>
+    <edge source="0" target="2"><data key="weight">17.24</data></edge>
+    <edge source="1" target="3"><data key="weight">7.51</data></edge>
+    <edge source="1" target="8"><data key="weight">10.97</data></edge>
+    <edge source="1" target="5"><data key="weight">13.69</data></edge>
+    <edge source="1" target="9"><data key="weight">13.75</data></edge>
+    <edge source="2" target="4"><data key="weight">18.85</data></edge>
+    <edge source="2" target="5"><data key="weight">22.68</data></edge>
+    <edge source="2" target="10"><data key="weight">22.94</data></edge>
+    <edge source="3" target="8"><data key="weight">3.55</data></edge>
+    <edge source="3" target="12"><data key="weight">8.06</data></edge>
+    <edge source="3" target="5"><data key="weight">8.9</data></edge>
+    <edge source="4" target="5"><data key="weight">3.83</data></edge>
+    <edge source="4" target="10"><data key="weight">5.6</data></edge>
+    <edge source="4" target="16"><data key="weight">9.95</data></edge>
+    <edge source="5" target="10"><data key="weight">4.34</data></edge>
+    <edge source="5" target="14"><data key="weight">8.78</data></edge>
+    <edge source="6" target="11"><data key="weight">3.91</data></edge>
+    <edge source="6" target="7"><data key="weight">5.41</data></edge>
+    <edge source="6" target="9"><data key="weight">8.82</data></edge>
+    <edge source="6" target="21"><data key="weight">11.6</data></edge>
+    <edge source="7" target="11"><data key="weight">7.81</data></edge>
+    <edge source="7" target="9"><data key="weight">14.13</data></edge>
+    <edge source="7" target="21"><data key="weight">14.43</data></edge>
+    <edge source="8" target="12"><data key="weight">4.82</data></edge>
+    <edge source="8" target="13"><data key="weight">6.04</data></edge>
+    <edge source="8" target="9"><data key="weight">8.66</data></edge>
+    <edge source="9" target="15"><data key="weight">5.8</data></edge>
+    <edge source="9" target="11"><data key="weight">7.19</data></edge>
+    <edge source="10" target="14"><data key="weight">4.9</data></edge>
+    <edge source="10" target="16"><data key="weight">5.48</data></edge>
+    <edge source="11" target="21"><data key="weight">7.7</data></edge>
+    <edge source="12" target="13"><data key="weight">3.94</data></edge>
+    <edge source="12" target="18"><data key="weight">4.7</data></edge>
+    <edge source="12" target="19"><data key="weight">5.48</data></edge>
+    <edge source="13" target="19"><data key="weight">3.0</data></edge>
+    <edge source="13" target="20"><data key="weight">4.1</data></edge>
+    <edge source="13" target="18"><data key="weight">4.69</data></edge>
+    <edge source="13" target="15"><data key="weight">5.22</data></edge>
+    <edge source="14" target="17"><data key="weight">3.69</data></edge>
+    <edge source="14" target="16"><data key="weight">4.06</data></edge>
+    <edge source="14" target="18"><data key="weight">6.14</data></edge>
+    <edge source="15" target="20"><data key="weight">3.82</data></edge>
+    <edge source="15" target="19"><data key="weight">6.36</data></edge>
+    <edge source="15" target="21"><data key="weight">7.61</data></edge>
+    <edge source="15" target="25"><data key="weight">14.09</data></edge>
+    <edge source="16" target="17"><data key="weight">2.46</data></edge>
+    <edge source="16" target="22"><data key="weight">8.04</data></edge>
+    <edge source="17" target="23"><data key="weight">6.33</data></edge>
+    <edge source="17" target="22"><data key="weight">7.1</data></edge>
+    <edge source="18" target="19"><data key="weight">2.97</data></edge>
+    <edge source="18" target="20"><data key="weight">6.19</data></edge>
+    <edge source="18" target="24"><data key="weight">7.23</data></edge>
+    <edge source="18" target="26"><data key="weight">9.86</data></edge>
+    <edge source="19" target="20"><data key="weight">3.22</data></edge>
+    <edge source="20" target="21"><data key="weight">9.55</data></edge>
+    <edge source="20" target="25"><data key="weight">14.24</data></edge>
+    <edge source="21" target="25"><data key="weight">7.8</data></edge>
+    <edge source="22" target="28"><data key="weight">6.22</data></edge>
+    <edge source="22" target="23"><data key="weight">6.88</data></edge>
+    <edge source="22" target="27"><data key="weight">7.87</data></edge>
+    <edge source="23" target="27"><data key="weight">4.64</data></edge>
+    <edge source="23" target="24"><data key="weight">5.4</data></edge>
+    <edge source="23" target="26"><data key="weight">5.81</data></edge>
+    <edge source="23" target="28"><data key="weight">8.87</data></edge>
+    <edge source="24" target="26"><data key="weight">2.64</data></edge>
+    <edge source="24" target="27"><data key="weight">7.34</data></edge>
+    <edge source="24" target="29"><data key="weight">18.59</data></edge>
+    <edge source="25" target="29"><data key="weight">14.14</data></edge>
+    <edge source="26" target="27"><data key="weight">5.84</data></edge>
+    <edge source="26" target="28"><data key="weight">11.89</data></edge>
+    <edge source="26" target="29"><data key="weight">17.29</data></edge>
+    <edge source="26" target="30"><data key="weight">17.49</data></edge>
+    <edge source="27" target="28"><data key="weight">6.06</data></edge>
+    <edge source="27" target="30"><data key="weight">15.86</data></edge>
+    <edge source="27" target="31"><data key="weight">28.2</data></edge>
+    <edge source="28" target="30"><data key="weight">16.57</data></edge>
+    <edge source="28" target="31"><data key="weight">28.26</data></edge>
+    <edge source="29" target="30"><data key="weight">18.75</data></edge>
+    <edge source="29" target="31"><data key="weight">25.35</data></edge>
+    <edge source="30" target="31"><data key="weight">12.36</data></edge>
+  </graph>
+</graphml>

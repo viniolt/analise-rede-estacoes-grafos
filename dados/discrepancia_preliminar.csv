@@ -1,0 +1,33 @@
+vertice,estacao,grau,precip_mm,media_vizinhos_mm,diferenca_mm,z,discrepante
+30,Parelheiros/Barragem,5,924.0,679.7,244.3,1.82,sim
+8,Vila Maria/Guilherme,5,946.0,712.8,233.2,1.73,sim
+28,M Boi Mirim,6,509.4,707.2,-197.8,-1.62,sim
+20,Vila Prudente,6,451.2,636.8,-185.6,-1.52,sim
+21,Sao Mateus,6,457.8,630.6,-172.8,-1.42,não
+25,Maua,4,747.0,556.8,190.2,1.4,não
+2,Santana de Parnaiba,4,734.8,547.2,187.6,1.38,não
+22,Campo Limpo,5,478.0,625.7,-147.7,-1.23,não
+10,Lapa,6,466.8,607.2,-140.4,-1.17,não
+6,Sao Miguel Paulista,4,788.8,632.7,156.1,1.13,não
+13,Mooca,6,584.4,712.6,-128.2,-1.08,não
+15,Vila Formosa,6,503.8,632.1,-128.3,-1.08,não
+23,Santo Amaro,6,766.4,621.1,145.3,1.05,não
+19,Ipiranga,5,772.2,628.4,143.8,1.04,não
+27,Parelheiros/Rodoanel,7,591.6,707.3,-115.7,-0.98,não
+31,Marsilac,4,840.8,709.9,130.9,0.94,não
+26,Cidade Ademar,7,642.4,735.9,-93.5,-0.81,não
+3,Santana/Tucuruvi,5,645.4,735.4,-90.0,-0.78,não
+17,Capela do Socorro,4,715.4,607.8,107.6,0.76,não
+12,Se - CGE,5,846.8,740.8,106.0,0.74,não
+11,Itaquera,4,597.6,680.5,-82.9,-0.72,não
+18,Vila Mariana,7,755.8,675.4,80.4,0.54,não
+24,Jabaquara,5,790.0,714.1,75.9,0.51,não
+9,Penha,6,780.2,706.4,73.8,0.49,não
+0,Perus,5,552.8,603.2,-50.4,-0.47,não
+1,Tremembe,4,707.0,749.0,-42.0,-0.41,não
+4,Pirituba,5,545.0,584.8,-39.8,-0.39,não
+16,Butanta,5,545.6,569.2,-23.6,-0.26,não
+7,Itaim Paulista,4,695.2,656.1,39.1,0.22,não
+29,Riacho Grande,5,814.4,788.8,25.6,0.12,não
+14,Pinheiros,5,641.0,621.6,19.4,0.07,não
+5,Freguesia do O,7,624.2,613.3,10.9,0.0,não

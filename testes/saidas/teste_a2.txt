@@ -1,0 +1,25 @@
+# Teste a2: Ler arquivo inexistente
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  j) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: nao_existe.txt
+  [erro] Arquivo 'nao_existe.txt' não encontrado.
+
+  [... menu ...]
+  Opção: j
+
+  Aplicação encerrada.

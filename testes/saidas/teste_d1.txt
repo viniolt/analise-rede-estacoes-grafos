@@ -1,0 +1,40 @@
+# Teste d1: Inserir aresta IAG-USP - Jabaquara (3,3 km)
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  j) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: 
+  Grafo lido: tipo 3 (grafo não orientado com peso nos vértices e arestas), n = 32, m = 84.
+
+  [... menu ...]
+  Opção: c
+
+  Rótulo (nome da estação): IAG-USP
+  Peso do vértice (precipitação acumulada, mm): 700
+  Vértice 32 (IAG-USP) inserido. n = 33.
+
+  [... menu ...]
+  Opção: d
+
+  Vértice de origem: 32
+  Vértice de destino: 24
+  Peso da aresta (distância, km): 3.3
+  Aresta 32 (IAG-USP) - 24 (Jabaquara) inserida. m = 85.
+
+  [... menu ...]
+  Opção: j
+
+  Aplicação encerrada.

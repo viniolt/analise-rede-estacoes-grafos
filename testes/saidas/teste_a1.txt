@@ -1,0 +1,25 @@
+# Teste a1: Ler o grafo.txt da rede de estações
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  j) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: 
+  Grafo lido: tipo 3 (grafo não orientado com peso nos vértices e arestas), n = 32, m = 84.
+
+  [... menu ...]
+  Opção: j
+
+  Aplicação encerrada.

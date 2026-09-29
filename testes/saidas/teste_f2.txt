@@ -1,0 +1,32 @@
+# Teste f2: Remover aresta inexistente (Perus - Marsilac)
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  j) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: 
+  Grafo lido: tipo 3 (grafo não orientado com peso nos vértices e arestas), n = 32, m = 84.
+
+  [... menu ...]
+  Opção: f
+
+  Vértice de origem: 0
+  Vértice de destino: 31
+  [aviso] A aresta 0 - 31 não existe.
+
+  [... menu ...]
+  Opção: j
+
+  Aplicação encerrada.

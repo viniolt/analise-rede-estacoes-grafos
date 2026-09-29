@@ -1,0 +1,52 @@
+# Teste i3: Conexidade e grafo reduzido de um grafo orientado
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  j) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: testes/grafo_orientado.txt
+  Grafo lido: tipo 6 (grafo orientado com peso na aresta), n = 5, m = 6.
+
+  [... menu ...]
+  Opção: i
+
+  Categoria de conexidade (grafo orientado): C2
+  Componentes fortemente conexas (FCONEX): 2
+   C0: [0, 1, 2]
+   C1: [3, 4]
+  Grafo reduzido (arestas entre componentes):
+   C0 -> C1
+
+  [... menu ...]
+  Opção: f
+
+  Vértice de origem: 2
+  Vértice de destino: 3
+  Aresta 2 - 3 removida. m = 5.
+
+  [... menu ...]
+  Opção: i
+
+  Categoria de conexidade (grafo orientado): C0
+  Componentes fortemente conexas (FCONEX): 2
+   C0: [0, 1, 2]
+   C1: [3, 4]
+  Grafo reduzido (arestas entre componentes):
+   (nenhuma aresta)
+
+  [... menu ...]
+  Opção: j
+
+  Aplicação encerrada.
