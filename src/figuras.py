@@ -1,16 +1,24 @@
 # -*- coding: utf-8 -*-
 """
-Projeto de Teoria dos Grafos - Parte 2
+Projeto de Teoria dos Grafos - Partes 2 e 3
 Análise de Padrões Climáticos em uma Rede de Estações Meteorológicas
 por meio da Teoria dos Grafos
 
 Integrantes:
     Vinícius Pereira Rodrigues - RA 10729470
 
+Histórico de alterações:
+    28/09/2026 - Vinícius Pereira Rodrigues - versão da Parte 2.
+    21/11/2026 - Vinícius Pereira Rodrigues - Parte 3: figura das regiões
+                 de chuva homogênea (AGM de Kruskal); imagens de testes
+                 antigos são apagadas antes de gerar as novas.
+
 Síntese:
     Gera as figuras do relatório (requer matplotlib):
       - figuras/grafo_mapa.png: o grafo desenhado nas coordenadas reais das
         estações, com a cor do vértice indicando a precipitação acumulada;
+      - figuras/regioes_agm.png: árvore geradora mínima do grafo de
+        diferenças de chuva e as regiões obtidas na opção j) do menu;
       - figuras/testes/teste_XX.png: imagem de cada saída de teste gravada
         em testes/saidas/ (captura da tela do terminal).
 
@@ -37,13 +45,19 @@ RAIZ = os.path.normpath(os.path.join(os.path.dirname(
 FIGS = os.path.join(RAIZ, "figuras")
 
 
-def figura_mapa():
-    grafo = Grafo.lerArquivo(os.path.join(RAIZ, "grafo.txt"))
+def coordenadas():
+    """Latitude e longitude de cada estação (mesma ordem dos vértices)."""
     with open(os.path.join(RAIZ, "dados", "estacoes_resumo.csv"),
               encoding="utf-8") as arq:
         estacoes = list(csv.DictReader(arq))
     lat = [float(e["lat"]) for e in estacoes]
     lon = [float(e["lon"]) for e in estacoes]
+    return lat, lon
+
+
+def figura_mapa():
+    grafo = Grafo.lerArquivo(os.path.join(RAIZ, "grafo.txt"))
+    lat, lon = coordenadas()
 
     fig, ax = plt.subplots(figsize=(9, 10))
     for v, w, peso in grafo.arestas():
@@ -71,9 +85,59 @@ def figura_mapa():
     plt.close(fig)
 
 
+def figura_regioes(k=4):
+    """Mapa da opção j): arestas da AGM (Kruskal) sobre o grafo de
+    diferenças de chuva; as arestas retiradas aparecem tracejadas e cada
+    região recebe uma cor."""
+    grafo = Grafo.lerArquivo(os.path.join(RAIZ, "grafo.txt"))
+    lat, lon = coordenadas()
+    arvore, regioes, cortadas = grafo.grafoDiferencaPesos().regioesPorAGM(k)
+    regioes.sort(key=len, reverse=True)
+    regiao_de = {}
+    for i, regiao in enumerate(regioes):
+        for v in regiao:
+            regiao_de[v] = i
+
+    fig, ax = plt.subplots(figsize=(9, 10))
+    for v, w, _ in grafo.arestas():  # vizinhanças do grafo original
+        ax.plot([lon[v], lon[w]], [lat[v], lat[w]], color="#e4e7eb",
+                linewidth=0.8, zorder=1)
+    for v, w, peso in arvore:
+        cortada = (v, w, peso) in cortadas
+        ax.plot([lon[v], lon[w]], [lat[v], lat[w]],
+                color="#c0392b" if cortada else "#52606d",
+                linestyle="--" if cortada else "-",
+                linewidth=1.6, zorder=2)
+        ax.text((lon[v] + lon[w]) / 2, (lat[v] + lat[w]) / 2,
+                f"{peso:g}", fontsize=5.5, color="#323f4b",
+                ha="center", va="center", zorder=3)
+    cores = plt.get_cmap("tab10")
+    for i, regiao in enumerate(regioes):
+        ax.scatter([lon[v] for v in regiao], [lat[v] for v in regiao],
+                   color=cores(i), s=160, edgecolors="#1f2933",
+                   linewidths=0.8, zorder=4,
+                   label=f"Região {i + 1} ({len(regiao)} estações)")
+    for v in range(grafo.n):
+        ax.annotate(f"{v} {grafo.rotulos[v]} ({grafo.pesosV[v]:g})",
+                    (lon[v], lat[v]), xytext=(6, 4),
+                    textcoords="offset points", fontsize=6.5, zorder=5)
+    ax.legend(loc="lower left", fontsize=8)
+    ax.set_xlabel("Longitude")
+    ax.set_ylabel("Latitude")
+    ax.set_title(f"AGM (Kruskal) do grafo de diferenças de chuva e "
+                 f"k = {k} regiões\npeso = |chuva(v) - chuva(w)| (mm); "
+                 "tracejado = aresta retirada")
+    ax.set_aspect(1 / 0.917)
+    fig.tight_layout()
+    fig.savefig(os.path.join(FIGS, "regioes_agm.png"), dpi=200)
+    plt.close(fig)
+
+
 def figuras_testes():
     destino = os.path.join(FIGS, "testes")
     os.makedirs(destino, exist_ok=True)
+    for antiga in glob.glob(os.path.join(destino, "teste_*.png")):
+        os.remove(antiga)
     for caminho in sorted(glob.glob(os.path.join(RAIZ, "testes", "saidas",
                                                  "teste_*.txt"))):
         with open(caminho, encoding="utf-8") as arq:
@@ -103,5 +167,6 @@ def figuras_testes():
 if __name__ == "__main__":
     os.makedirs(FIGS, exist_ok=True)
     figura_mapa()
+    figura_regioes()
     figuras_testes()
     print("Figuras gravadas em", FIGS)

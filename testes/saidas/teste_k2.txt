@@ -1,0 +1,74 @@
+# Teste k2: Rota até Marsilac isolada (sem caminho; grafo desconexo)
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  ---------------- Solução do problema (Parte 3) -----------------
+  j) Regiões de chuva homogênea (árvore geradora mínima - Kruskal)
+  k) Rota mínima entre estações e estação central (Dijkstra)
+  -------------- Características do grafo (Parte 3) --------------
+  l) Graus dos vértices
+  m) Coloração dos vértices (coloração sequencial)
+  n) Verificar se o grafo é euleriano
+  o) Verificar se o grafo é hamiltoniano
+  ----------------------------------------------------------------
+  p) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: 
+  Grafo lido: tipo 3 (grafo não orientado com peso nos vértices e arestas), n = 32, m = 84.
+
+  [... menu ...]
+  Opção: f
+
+  Vértice de origem: 27
+  Vértice de destino: 31
+  Aresta 27 - 31 removida. m = 83.
+
+  [... menu ...]
+  Opção: f
+
+  Vértice de origem: 28
+  Vértice de destino: 31
+  Aresta 28 - 31 removida. m = 82.
+
+  [... menu ...]
+  Opção: f
+
+  Vértice de origem: 29
+  Vértice de destino: 31
+  Aresta 29 - 31 removida. m = 81.
+
+  [... menu ...]
+  Opção: f
+
+  Vértice de origem: 30
+  Vértice de destino: 31
+  Aresta 30 - 31 removida. m = 80.
+
+  [... menu ...]
+  Opção: k
+
+  Estação de origem: 0
+  Estação de destino: 31
+
+  ROTA MÍNIMA (Dijkstra) de 0 (Perus) até 31 (Marsilac):
+   Não existe caminho entre as duas estações.
+
+  ESTAÇÃO CENTRAL (centro do grafo = menor excentricidade):
+   Grafo desconexo: nenhuma estação alcança todas as outras.
+
+  [... menu ...]
+  Opção: p
+
+  Aplicação encerrada.

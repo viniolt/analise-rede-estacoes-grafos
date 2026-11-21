@@ -7,6 +7,9 @@ por meio da Teoria dos Grafos
 Integrantes:
     Vinícius Pereira Rodrigues - RA 10729470
 
+Histórico de alterações:
+    28/09/2026 - Vinícius Pereira Rodrigues - versão da Parte 2.
+
 Síntese:
     Constrói o grafo da rede de estações a partir de dados/estacoes_resumo.csv
     e grava:

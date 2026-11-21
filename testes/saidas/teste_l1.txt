@@ -1,0 +1,63 @@
+# Teste l1: Graus dos vértices da rede de estações
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  ---------------- Solução do problema (Parte 3) -----------------
+  j) Regiões de chuva homogênea (árvore geradora mínima - Kruskal)
+  k) Rota mínima entre estações e estação central (Dijkstra)
+  -------------- Características do grafo (Parte 3) --------------
+  l) Graus dos vértices
+  m) Coloração dos vértices (coloração sequencial)
+  n) Verificar se o grafo é euleriano
+  o) Verificar se o grafo é hamiltoniano
+  ----------------------------------------------------------------
+  p) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: 
+  Grafo lido: tipo 3 (grafo não orientado com peso nos vértices e arestas), n = 32, m = 84.
+
+  [... menu ...]
+  Opção: l
+
+  Grau de cada vértice:
+    0 Perus: 5                      1 Tremembe: 4                  
+    2 Santana de Parnaib: 4         3 Santana/Tucuruvi: 5          
+    4 Pirituba: 5                   5 Freguesia do O: 7            
+    6 Sao Miguel Paulist: 4         7 Itaim Paulista: 4            
+    8 Vila Maria/Guilher: 5         9 Penha: 6                     
+   10 Lapa: 6                      11 Itaquera: 4                  
+   12 Se - CGE: 5                  13 Mooca: 6                     
+   14 Pinheiros: 5                 15 Vila Formosa: 6              
+   16 Butanta: 5                   17 Capela do Socorro: 4         
+   18 Vila Mariana: 7              19 Ipiranga: 5                  
+   20 Vila Prudente: 6             21 Sao Mateus: 6                
+   22 Campo Limpo: 5               23 Santo Amaro: 6               
+   24 Jabaquara: 5                 25 Maua: 4                      
+   26 Cidade Ademar: 7             27 Parelheiros/Rodoan: 7        
+   28 M Boi Mirim: 6               29 Riacho Grande: 5             
+   30 Parelheiros/Barrag: 5        31 Marsilac: 4                  
+
+  Grau mínimo: 4   Grau máximo: 7   Grau médio: 5.25
+  Distribuição (grau: qtde de vértices): 4: 8, 5: 12, 6: 8, 7: 4
+  Vértice(s) de maior grau (7): Freguesia do O, Vila Mariana, Cidade Ademar, Parelheiros/Rodoanel
+
+  Teorema: soma dos graus = 168 = 2 x m (m = 84) -> OK
+  Teorema: vértices de grau ímpar = 16 (quantidade par) -> OK
+  Densidade: 0.169
+
+  [... menu ...]
+  Opção: p
+
+  Aplicação encerrada.

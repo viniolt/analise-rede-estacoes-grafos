@@ -1,0 +1,58 @@
+# Teste k1: Rota mínima Perus -> Marsilac e estação central
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  ---------------- Solução do problema (Parte 3) -----------------
+  j) Regiões de chuva homogênea (árvore geradora mínima - Kruskal)
+  k) Rota mínima entre estações e estação central (Dijkstra)
+  -------------- Características do grafo (Parte 3) --------------
+  l) Graus dos vértices
+  m) Coloração dos vértices (coloração sequencial)
+  n) Verificar se o grafo é euleriano
+  o) Verificar se o grafo é hamiltoniano
+  ----------------------------------------------------------------
+  p) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: 
+  Grafo lido: tipo 3 (grafo não orientado com peso nos vértices e arestas), n = 32, m = 84.
+
+  [... menu ...]
+  Opção: k
+
+  Estação de origem: 0
+  Estação de destino: 31
+
+  ROTA MÍNIMA (Dijkstra) de 0 (Perus) até 31 (Marsilac):
+   0 (Perus)                    -> 4 (Pirituba)                   7.85 km
+   4 (Pirituba)                 -> 16 (Butanta)                   9.95 km
+   16 (Butanta)                 -> 17 (Capela do Socorro)         2.46 km
+   17 (Capela do Socorro)       -> 23 (Santo Amaro)               6.33 km
+   23 (Santo Amaro)             -> 27 (Parelheiros/Rodoanel)      4.64 km
+   27 (Parelheiros/Rodoanel)    -> 31 (Marsilac)                  28.2 km
+   Total: 59.43 km em 6 trecho(s).
+
+  ESTAÇÃO CENTRAL (centro do grafo = menor excentricidade):
+   As 5 estações mais centrais (excentricidade em km):
+    17 (Capela do Socorro)           39.17
+    18 (Vila Mariana)                39.71
+    24 (Jabaquara)                   41.21
+    16 (Butanta)                     41.63
+    23 (Santo Amaro)                 41.89
+   Centro: Capela do Socorro - nenhuma estação fica a mais de 39.17 km dela pela rede.
+
+  [... menu ...]
+  Opção: p
+
+  Aplicação encerrada.

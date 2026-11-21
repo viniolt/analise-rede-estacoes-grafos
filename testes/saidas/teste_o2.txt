@@ -1,0 +1,44 @@
+# Teste o2: Grafo pequeno (com ponte) é hamiltoniano?
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  ---------------- Solução do problema (Parte 3) -----------------
+  j) Regiões de chuva homogênea (árvore geradora mínima - Kruskal)
+  k) Rota mínima entre estações e estação central (Dijkstra)
+  -------------- Características do grafo (Parte 3) --------------
+  l) Graus dos vértices
+  m) Coloração dos vértices (coloração sequencial)
+  n) Verificar se o grafo é euleriano
+  o) Verificar se o grafo é hamiltoniano
+  ----------------------------------------------------------------
+  p) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: testes/grafo_pequeno.txt
+  Grafo lido: tipo 0 (grafo não orientado sem peso), n = 6, m = 7.
+
+  [... menu ...]
+  Opção: o
+
+  Teorema 2 (Dirac): todo vértice com grau >= n/2 = 3? Grau mínimo = 2 -> NÃO satisfeito
+  Teorema 1 (Ore): pares não adjacentes com soma dos graus >= n = 6? -> NÃO satisfeito (8 pares falham)
+  Os teoremas são apenas condições suficientes: nada se pode concluir
+  por eles. Buscando um ciclo por tentativa e erro...
+
+  Resultado: NÃO HAMILTONIANO (a busca testou todas as possibilidades).
+
+  [... menu ...]
+  Opção: p
+
+  Aplicação encerrada.

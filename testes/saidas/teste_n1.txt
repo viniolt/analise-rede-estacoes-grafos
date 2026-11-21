@@ -1,0 +1,51 @@
+# Teste n1: Rede de estações é euleriana?
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  ---------------- Solução do problema (Parte 3) -----------------
+  j) Regiões de chuva homogênea (árvore geradora mínima - Kruskal)
+  k) Rota mínima entre estações e estação central (Dijkstra)
+  -------------- Características do grafo (Parte 3) --------------
+  l) Graus dos vértices
+  m) Coloração dos vértices (coloração sequencial)
+  n) Verificar se o grafo é euleriano
+  o) Verificar se o grafo é hamiltoniano
+  ----------------------------------------------------------------
+  p) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: 
+  Grafo lido: tipo 3 (grafo não orientado com peso nos vértices e arestas), n = 32, m = 84.
+
+  [... menu ...]
+  Opção: n
+
+  Conexo: sim
+  Vértices de grau ímpar: 16
+   0 Perus (5)               3 Santana/Tucuruvi (5)    4 Pirituba (5)            
+   5 Freguesia do O (7)      8 Vila Maria/Guilh (5)    12 Se - CGE (5)           
+   14 Pinheiros (5)          16 Butanta (5)            18 Vila Mariana (7)       
+   19 Ipiranga (5)           22 Campo Limpo (5)        24 Jabaquara (5)          
+   26 Cidade Ademar (7)      27 Parelheiros/Rodo (7)   29 Riacho Grande (5)      
+   30 Parelheiros/Barr (5)   
+
+  Resultado: NÃO EULERIANO
+  Não existe percurso que use cada ligação exatamente uma vez.
+  Uma inspeção de todas as ligações teria que repetir trechos (problema
+  do carteiro chinês).
+
+  [... menu ...]
+  Opção: p
+
+  Aplicação encerrada.

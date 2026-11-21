@@ -1,0 +1,53 @@
+# Teste m2: Coloração sequencial do grafo pequeno
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  ---------------- Solução do problema (Parte 3) -----------------
+  j) Regiões de chuva homogênea (árvore geradora mínima - Kruskal)
+  k) Rota mínima entre estações e estação central (Dijkstra)
+  -------------- Características do grafo (Parte 3) --------------
+  l) Graus dos vértices
+  m) Coloração dos vértices (coloração sequencial)
+  n) Verificar se o grafo é euleriano
+  o) Verificar se o grafo é hamiltoniano
+  ----------------------------------------------------------------
+  p) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: testes/grafo_pequeno.txt
+  Grafo lido: tipo 0 (grafo não orientado sem peso), n = 6, m = 7.
+
+  [... menu ...]
+  Opção: m
+
+  Coloração sequencial:
+   - ordem natural dos vértices (0, 1, 2, ...): 3 cores
+   - ordem decrescente de grau:                3 cores
+
+  PARTIÇÃO CROMÁTICA com 3 classes (X(G) <= 3):
+   Cor 1 (2 vértices):
+     a, d
+   Cor 2 (2 vértices):
+     b, f
+   Cor 3 (2 vértices):
+     c, e
+
+  Interpretação: estações da mesma cor não são vizinhas entre si; cada
+  classe pode ficar em manutenção ao mesmo tempo sem que duas estações
+  vizinhas fiquem desligadas juntas (as vizinhas cobrem a área).
+
+  [... menu ...]
+  Opção: p
+
+  Aplicação encerrada.

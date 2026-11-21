@@ -1,0 +1,58 @@
+# Teste o1: Rede de estações é hamiltoniana?
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  ---------------- Solução do problema (Parte 3) -----------------
+  j) Regiões de chuva homogênea (árvore geradora mínima - Kruskal)
+  k) Rota mínima entre estações e estação central (Dijkstra)
+  -------------- Características do grafo (Parte 3) --------------
+  l) Graus dos vértices
+  m) Coloração dos vértices (coloração sequencial)
+  n) Verificar se o grafo é euleriano
+  o) Verificar se o grafo é hamiltoniano
+  ----------------------------------------------------------------
+  p) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: 
+  Grafo lido: tipo 3 (grafo não orientado com peso nos vértices e arestas), n = 32, m = 84.
+
+  [... menu ...]
+  Opção: o
+
+  Teorema 2 (Dirac): todo vértice com grau >= n/2 = 16? Grau mínimo = 4 -> NÃO satisfeito
+  Teorema 1 (Ore): pares não adjacentes com soma dos graus >= n = 32? -> NÃO satisfeito (412 pares falham)
+  Os teoremas são apenas condições suficientes: nada se pode concluir
+  por eles. Buscando um ciclo por tentativa e erro...
+
+  Resultado: HAMILTONIANO. Ciclo encontrado (32 arestas, 306.90 km):
+   1 Tremembe                3 Santana/Tucuruvi        8 Vila Maria/Guilherme    
+   12 Se - CGE               13 Mooca                  19 Ipiranga               
+   15 Vila Formosa           9 Penha                   6 Sao Miguel Paulista     
+   11 Itaquera               7 Itaim Paulista          21 Sao Mateus             
+   20 Vila Prudente          25 Maua                   29 Riacho Grande          
+   31 Marsilac               30 Parelheiros/Barragem   28 M Boi Mirim            
+   22 Campo Limpo            17 Capela do Socorro      23 Santo Amaro            
+   27 Parelheiros/Rodoanel   24 Jabaquara              26 Cidade Ademar          
+   18 Vila Mariana           14 Pinheiros              16 Butanta                
+   4 Pirituba                0 Perus                   10 Lapa                   
+   2 Santana de Parnaiba     5 Freguesia do O          1 Tremembe                
+
+  Interpretação: é uma rota de manutenção que visita cada estação uma única
+  vez, andando só entre estações vizinhas, e volta ao ponto de partida.
+
+  [... menu ...]
+  Opção: p
+
+  Aplicação encerrada.

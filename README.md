@@ -34,16 +34,17 @@ Resultado: **n = 32, m = 84**, grafo conexo, grau entre 4 e 7.
 ```
 grafo.txt                    grafo modelado (formato do enunciado)
 src/grafo.py                 classe Grafo (lista de adjacência) – base: classe de aula
-src/main.py                  aplicação com o menu a) a j)
+src/main.py                  aplicação com o menu a) a p)
 src/prepara_dados.py         leitura dos CSVs do CGE e agregação na janela comum
 src/gera_grafo.py            regra k-NN + Haversine -> grafo.txt e dados/estacoes.graphml
 src/analise_preliminar.py    métricas estruturais e comparação com a vizinhança
-src/figuras.py               figura do grafo e imagens das saídas dos testes
+src/figuras.py               figuras do grafo, das regiões (Parte 3) e dos testes
 dados/estacoes_resumo.csv    atributos agregados por estação
 dados/estacoes.graphml       grafo para abrir no Gephi (com latitude/longitude)
-testes/roda_testes.py        2 testes por opção do menu (saídas em testes/saidas/)
+testes/roda_testes.py        2 ou 3 testes por opção do menu (saídas em testes/saidas/)
 testes/grafo_orientado.txt   dígrafo de exemplo para conexidade C0–C3 e grafo reduzido
-docs/                        relatório (docx/pdf) e rubrica
+testes/grafo_pequeno.txt     grafo G'12 da aula (semi-euleriano, não hamiltoniano)
+docs/                        relatórios (Partes 2 e 3, docx/pdf) e rubricas
 ```
 
 ## Como executar
@@ -67,17 +68,49 @@ python src/figuras.py                               # recria as figuras
 ## Menu da aplicação
 
 ```
+Parte 2 – manipulação do grafo
 a) Ler dados do arquivo grafo.txt        f) Remover aresta
 b) Gravar dados no arquivo grafo.txt     g) Mostrar conteúdo do arquivo
 c) Inserir vértice                       h) Mostrar grafo (lista de adjacência)
 d) Inserir aresta                        i) Conexidade do grafo e grafo reduzido
-e) Remover vértice                       j) Encerrar a aplicação
+e) Remover vértice
+
+Parte 3 – solução do problema
+j) Regiões de chuva homogênea (árvore geradora mínima – Kruskal)
+k) Rota mínima entre estações e estação central (Dijkstra)
+
+Parte 3 – características do grafo
+l) Graus dos vértices                    n) Verificar se o grafo é euleriano
+m) Coloração sequencial                  o) Verificar se o grafo é hamiltoniano
+
+p) Encerrar a aplicação
 ```
+
+## Parte 3 – técnicas e resultados
+
+**Solução do problema (técnicas da disciplina)**
+
+| Opção | Técnica | Resultado na rede do CGE |
+|---|---|---|
+| j) | Grafo de diferenças (peso da aresta = \|chuva(v) − chuva(w)\|), AGM por **Kruskal** e retirada das k − 1 arestas mais pesadas da árvore | Com k = 4: um bloco principal de 26 estações (média 684 mm), uma região seca no leste (Mooca, Vila Formosa, Vila Prudente, São Mateus – média 499 mm) e duas estações **discrepantes** isoladas: Vila Maria/Guilherme (946 mm) e Santana de Parnaíba (734,8 mm) |
+| k) | **Dijkstra** (caminho mínimo) e excentricidade de cada vértice | Rota Perus → Marsilac: 59,43 km em 6 trechos. Estação central (centro do grafo): **Capela do Socorro**, a no máximo 39,17 km de qualquer outra |
+
+**Características do grafo**
+
+| Opção | Técnica | Resultado |
+|---|---|---|
+| l) | Graus dos vértices | grau mín. 4, máx. 7, médio 5,25; soma dos graus = 168 = 2m; 16 vértices de grau ímpar |
+| m) | Coloração sequencial (ordem natural e por grau) | 5 classes de cor → X(G) ≤ 5 |
+| n) | Teorema dos vértices de grau ímpar | 16 vértices de grau ímpar → **não euleriano** |
+| o) | Teoremas de Ore e Dirac + busca por tentativa e erro | Teoremas não satisfeitos, mas foi encontrado um ciclo → **hamiltoniano** (rota de 306,90 km passando uma vez por cada estação) |
+
+![Regiões](figuras/regioes_agm.png)
 
 ## Relatório
 
-[docs/Relatorio_Projeto_TG_Parte2_VINICIUSRODRIGUES.pdf](docs/Relatorio_Projeto_TG_Parte2_VINICIUSRODRIGUES.pdf)
+- Parte 3 (final): [docs/Relatorio_Projeto_TG_Parte3_VINICIUSRODRIGUES.pdf](docs/Relatorio_Projeto_TG_Parte3_VINICIUSRODRIGUES.pdf)
+- Parte 2: [docs/Relatorio_Projeto_TG_Parte2_VINICIUSRODRIGUES.pdf](docs/Relatorio_Projeto_TG_Parte2_VINICIUSRODRIGUES.pdf)
 
 ## Vídeo
 
-Link do YouTube: *(será adicionado na Parte 3)*
+Link do YouTube: *(a adicionar)*

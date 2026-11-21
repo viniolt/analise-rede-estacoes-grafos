@@ -7,6 +7,9 @@ por meio da Teoria dos Grafos
 Integrantes:
     Vinícius Pereira Rodrigues - RA 10729470
 
+Histórico de alterações:
+    28/09/2026 - Vinícius Pereira Rodrigues - versão da Parte 2.
+
 Síntese:
     Lê os CSVs brutos das estações do CGE (Centro de Gerenciamento de
     Emergências Climáticas da Prefeitura de São Paulo), recorta a janela

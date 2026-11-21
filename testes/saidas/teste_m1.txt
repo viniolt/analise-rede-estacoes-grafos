@@ -1,0 +1,60 @@
+# Teste m1: Coloração sequencial da rede de estações
+
+==================================================================
+  REDE DE ESTAÇÕES METEOROLÓGICAS - ANÁLISE DE PADRÕES CLIMÁTICOS
+==================================================================
+  a) Ler dados do arquivo grafo.txt
+  b) Gravar dados no arquivo grafo.txt
+  c) Inserir vértice (estação)
+  d) Inserir aresta (vizinhança)
+  e) Remover vértice
+  f) Remover aresta
+  g) Mostrar conteúdo do arquivo
+  h) Mostrar grafo (lista de adjacência)
+  i) Apresentar a conexidade do grafo e o reduzido
+  ---------------- Solução do problema (Parte 3) -----------------
+  j) Regiões de chuva homogênea (árvore geradora mínima - Kruskal)
+  k) Rota mínima entre estações e estação central (Dijkstra)
+  -------------- Características do grafo (Parte 3) --------------
+  l) Graus dos vértices
+  m) Coloração dos vértices (coloração sequencial)
+  n) Verificar se o grafo é euleriano
+  o) Verificar se o grafo é hamiltoniano
+  ----------------------------------------------------------------
+  p) Encerrar a aplicação
+------------------------------------------------------------------
+  Opção: a
+
+  Arquivo [grafo.txt]: 
+  Grafo lido: tipo 3 (grafo não orientado com peso nos vértices e arestas), n = 32, m = 84.
+
+  [... menu ...]
+  Opção: m
+
+  Coloração sequencial:
+   - ordem natural dos vértices (0, 1, 2, ...): 5 cores
+   - ordem decrescente de grau:                5 cores
+
+  PARTIÇÃO CROMÁTICA com 5 classes (X(G) <= 5):
+   Cor 1 (9 vértices):
+     Perus, Tremembe, Sao Miguel Paulista, Se - CGE, Pinheiros, Vila
+     Formosa, Campo Limpo, Jabaquara, Parelheiros/Barragem
+   Cor 2 (8 vértices):
+     Santana de Parnaiba, Santana/Tucuruvi, Itaim Paulista, Mooca,
+     Butanta, Santo Amaro, Maua, Marsilac
+   Cor 3 (7 vértices):
+     Pirituba, Vila Maria/Guilherme, Itaquera, Capela do Socorro, Vila
+     Mariana, Parelheiros/Rodoanel, Riacho Grande
+   Cor 4 (5 vértices):
+     Freguesia do O, Penha, Ipiranga, Sao Mateus, Cidade Ademar
+   Cor 5 (3 vértices):
+     Lapa, Vila Prudente, M Boi Mirim
+
+  Interpretação: estações da mesma cor não são vizinhas entre si; cada
+  classe pode ficar em manutenção ao mesmo tempo sem que duas estações
+  vizinhas fiquem desligadas juntas (as vizinhas cobrem a área).
+
+  [... menu ...]
+  Opção: p
+
+  Aplicação encerrada.

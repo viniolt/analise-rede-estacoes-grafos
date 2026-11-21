@@ -12,7 +12,16 @@
   g) Mostrar conteúdo do arquivo
   h) Mostrar grafo (lista de adjacência)
   i) Apresentar a conexidade do grafo e o reduzido
-  j) Encerrar a aplicação
+  ---------------- Solução do problema (Parte 3) -----------------
+  j) Regiões de chuva homogênea (árvore geradora mínima - Kruskal)
+  k) Rota mínima entre estações e estação central (Dijkstra)
+  -------------- Características do grafo (Parte 3) --------------
+  l) Graus dos vértices
+  m) Coloração dos vértices (coloração sequencial)
+  n) Verificar se o grafo é euleriano
+  o) Verificar se o grafo é hamiltoniano
+  ----------------------------------------------------------------
+  p) Encerrar a aplicação
 ------------------------------------------------------------------
   Opção: g
 
@@ -146,6 +155,6 @@
    30  31  Parelheiros/Barragem  Marsilac                   12.36
 
   [... menu ...]
-  Opção: j
+  Opção: p
 
   Aplicação encerrada.
